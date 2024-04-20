@@ -1,0 +1,289 @@
+@font-face{
+    font-family: "Heavitas";
+    src: local( "font/Heavitas"), url(font/Heavitas.ttf);
+}
+*{
+    font-family:"Poppins" ;
+    margin: 0; padding: 0;
+    -webkit-text-size-adjust:none;
+    font-size-adjust: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+:root{
+    --secondcolor : hsl(24, 100%, 53%);
+    --maincolor : hsl(24, 100%, 94%);
+    --thirdcolor : hsl(0, 0%, 9%);
+}
+  
+body{
+    background-color: var(--maincolor);
+    overflow: auto;
+}
+body::-webkit-scrollbar{
+  width: 0px;
+}
+
+
+.head_menu{
+    position: fixed; top:0px;
+    left: 0;right: 0;
+    display: flex; 
+    justify-content: space-around;
+    cursor: pointer;
+    font-size: 1rem;
+    color: var(--secondcolor);
+    padding: 1.563rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: var(--maincolor);
+    height: 2rem;
+}
+.head_menu_name{
+    margin-top: 0.469rem;
+    margin-right: auto;
+    vertical-align: middle;
+}
+.head_menu_name:hover{
+    color: var(--thirdcolor);
+}
+.head_menu li{
+    margin-left: 0.938rem;
+    height: 1.25rem;
+    list-style: none;
+    padding: 0.469rem;
+    font-weight: light;
+    position: relative;
+}
+.head_menu li:hover{
+    color: var(--thirdcolor);
+}
+.head_menu_mobile , .menu{
+    display: none;
+}
+.head_menu_button{
+    margin-top: 0.469rem;
+    padding: 0.4rem 0.8rem 0.4rem 0.8rem;
+    background-color: var(--secondcolor);
+    color: var(--maincolor);
+    outline: none;
+    border: 0;
+    font-size: 1rem;
+    align-self: center;
+    margin-left: 1rem;
+    border-radius: 0.4rem;
+}
+
+.home{
+    height: 45rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+.home_text{
+    margin-top: 8rem;
+    font-size: 2.9rem;
+    font-weight: 600;
+    width: 100%;
+    color: var(--secondcolor);
+    padding-bottom: 1rem;
+}
+.home_text_sub{
+    margin-top: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: lighter;
+    width: 100%;
+    color: var(--secondcolor );
+    text-transform: uppercase;
+}
+.home_img{
+    background-image:linear-gradient(to bottom,
+    hsla(0, 0%, 0%, 0.794),
+    hsla(0, 0%, 0%, 0.444),
+    hsla(0, 0%, 0%, 0.204),
+    hsla(0, 0%, 0%, 0.444),
+    hsla(0, 0%, 0%, 0.794)),
+     url(img/designer.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 20rem;
+    margin-top: 1.4rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+.about{
+    height: 45rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: var(--secondcolor);
+    background-image:linear-gradient(to bottom,
+    hsla(24, 83%, 21%, 0.768),
+    hsla(24, 83%, 21%, 0.753),
+    hsla(24, 83%, 21%, 0.768)),
+     url(img/about.jpg);
+    background-size: cover;
+}
+#about_texts{
+    margin-top: 4rem;
+    width: 38%;
+    color: var(--maincolor);
+    font-size: 0.9rem;
+    padding: 3rem;
+    text-align: left;
+}
+.about_title{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.about_button{
+    color: var(--secondcolor);
+    font-size: 0.9rem;
+    width: 80%;
+    outline: none;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--maincolor);
+    padding: 1rem;
+    margin-top: 2rem;
+}
+.about_posts{
+    width: 40%;
+    height: 28rem;
+    margin-top: 4rem;
+    margin-right: 4rem;
+}
+
+.about_post{
+    width: 90%;
+    height:28rem;
+    background-color: hsla(28, 96%, 82%, 0.612);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    color: var(--maincolor);
+    font-size: 4rem;
+    display: flex;
+    align-items: center;
+    padding-left: 2rem;
+}
+.about_post_text{
+    font-weight: normal;
+    width: 90%;
+}
+
+.projects{
+    height:  28rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 4rem;
+    display: grid;
+    grid-template-columns: 25rem 25rem 25rem;
+    justify-content: space-around;
+}
+
+.project{
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-size: cover;
+    margin: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 20rem;
+    -webkit-box-shadow: 0px 0px 11px -2px #000000; 
+    box-shadow: 0px 0px 11px -2px #000000;
+    background-position-x: center;
+}
+
+.project_title{
+    margin-bottom: 0.8rem;
+    color: var(--maincolor);
+    font-size: 1.1rem;
+    width: 100%;
+}
+.project_description{
+    width: 100%;
+    color: var(--maincolor);
+    font-size: 0.9rem; 
+    font-weight: lighter;   
+}
+.project_button{
+    font-weight: 500;
+    margin-top: 1.125rem;
+    color: var(--maincolor);
+    font-size: 0.9rem;
+    padding:1rem;
+    width: 100%;
+    border-radius: 0.5rem;
+    background-color: var(--secondcolor);
+    border: 0;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.contact{
+    height:  30rem;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: var(--secondcolor);
+    
+}
+.box-container{
+    margin-left: 2%;
+    margin-right: 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+    gap:1.5rem;
+    justify-content: space-between;
+    align-content: center;
+}
+.box{
+    border-radius: 0.2rem;
+    padding: 2rem;
+    margin-top: 3rem;
+}
+.box h3{
+    font-size: 0.9rem;
+    color:var(--maincolor);
+    padding: 1rem 0;
+    font-weight: medium;
+}
+.box a{
+    display: block;
+    font-size: 0.8rem;
+    color:var(--maincolor);
+    padding: 0.625rem 0;
+    text-decoration: none;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.contact .box-container .box a i{
+    padding-right: 5px;
+}
+.contact .box-container .box a:hover i{
+    padding-right:10px;
+}
+.contact .credit{ 
+    padding: 2rem 0 0 0;
+    margin: 6.25rem 0 0 0;
+    text-align: center;
+    font-size: 15px;
+    color: var(--maincolor);
+    cursor: pointer;
+}
+
+
+
+
+.head_menu_icon,.head_menu_icon_2, .head_menu_mobile{
+    display: none;
+}
